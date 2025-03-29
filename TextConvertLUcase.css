@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(#a9f1df, #ffbbbb);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  /* width: calc(100% - 50px); Makes width responsive */
+}
+.container {
+  margin: 50px 400px;
+}
+#content {
+  height: 250px;
+  width: 500px;
+  font-size: 20px;
+  box-shadow: 5px 5px 10px rebeccapurple;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+#btn {
+  padding: 5px;
+  border: none;
+  margin-top: 5px;
+  border: 2px solid blue;
+  background-color: blue;
+  color: white;
+  box-shadow: 5px 5px 10px rebeccapurple;
+  display: flex;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 360px) {
+  body {
+    width: 100vh;
+    height: 100vh;
+
+    background-color: #ffbbbb;
+    background-repeat: no-repeat;
+    background-size: cover; /* Pura screen cover karega */
+    background-position: center;
+  }
+  .container {
+    margin: 10vh 10vh;
+    padding: 0px;
+  }
+  #content {
+    padding: 20px;
+    height: 300px;
+    width: 500px;
+  }
+  #btn {
+    margin-top: 20px;
+  }
+  #btn:hover {
+    background-color: burlywood;
+  }
+}
